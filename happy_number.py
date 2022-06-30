@@ -1,13 +1,17 @@
+def hpy(n):
+    x=n
+    sum1=0
+    while x>0:
+        c=x%10
+        sum1=(sum1+(c*c))
+        x//=10
+    return sum1
 n=int(input())
-sum=0
-while(sum!=1 and sum!=4):
-    sum=0
-    while(n>0):
-        temp=n%10
-        sum+=(temp*temp)
-        n=n//10
-    n=sum
-if(sum==1):
-    print('True')
+hpy(n)
+s=n
+while s>9:
+    s=hpy(s)
+if  s==1 or s==7:
+    print(True)
 else:
-    print('False')
+    print(False)
