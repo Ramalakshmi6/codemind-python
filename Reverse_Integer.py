@@ -9,7 +9,7 @@ while(n!=0):
     rev=rev*10+d
     n=n//10
 if(t<0):
-    k=rev-(rev*2)
-    print(k)
+ k=rev-(rev*2)
+ print(k)
 else:
     print(rev)
