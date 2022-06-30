@@ -1,18 +1,12 @@
-z=int(input())
-r=0
-rev=0
-n=z
-p=n*n
-while n:
-    m=n%10
-    r=(r*10)+m
-    n=n//10
-c=r*r
-while c:
-    a=c%10
-    rev=(rev*10)+a
-    c=c//10
-if p==rev:
-    print("True")
+def revs(n):
+    r=0
+    while n>0:
+        r=r*10+n%10
+        n//=10
+    return r
+n=int(input())
+rn=revs(n)
+if n**2==revs(rn**2):
+    print(True)
 else:
-    print("False")
+    print(False)
